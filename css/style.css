@@ -57,19 +57,19 @@
     margin: 0 0 0 auto;
 }
 
-.header_wrap .gnb ul {
+.header_wrap ul {
     display: flex;
     gap: 60px;
 }
 
-.header_wrap .gnb a {
+.header_wrap ul a {
     font-size: 19px;
     font-weight: 600;
     text-align: center;
     text-shadow: 1px 1px 1px gray;
 }
 
-.header_wrap .gnb02 {
+.header_wrap .member {
     margin: 0 0 0 60px;
 }
 
@@ -531,8 +531,8 @@
 }
 
 .mainNews .news_wrap p {
-    margin: 0 0 30px 0;
-    padding: 0 0 30px 0;
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
     font-size: 20px;
     font-weight: 600;
     border-bottom: 1px solid #ddd;
@@ -546,11 +546,163 @@
     line-height: 1.9;
 }
 
+.mainNews .news_wrap li {
+    position: relative;
+}
+
+.mainNews .news_wrap li a span {
+    position: absolute;
+    right: 0;
+}
+
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ푸터입니다 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 .footer {
-    border: 4px solid #ddd;
-    text-align: center;
-    padding: 32px 0;
+    background: #f3f4f8;
+    padding: 30px 0 50px 0;
+    line-height: 15px;
+}
 
-    margin: 0 0 100vh 0;
+.footer .footer_inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.footer .footer_top ul {
+    position: relative;
+    display: flex;
+    padding: 0 0 5px 0;
+
+}
+
+.footer .footer_top ul li {
+    padding: 0 15px;
+    border-left: 1px solid #666;
+
+}
+
+.footer .footer_top ul li:nth-child(1) {
+    padding-left: 0;
+    border: none;
+}
+
+.footer .footer_top ul .FI a {
+    font-size: 17px;
+    font-weight: 700;
+    color: #045FB4;
+}
+
+.footer .footer_top .sub li {
+    margin: 0 0 0 auto;
+
+}
+
+.footer .footer_top .sub li {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer .footer_bot {
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer .footer_bot p {
+    padding: 0 0 0 60px;
+    line-height: 60px;
+    color: #666;
+}
+
+.footer .footer_bot .bot_right {
+    margin: 30px 0 0 auto;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ사이드메뉴입니다 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.sideBox {
+    position: fixed;
+    top: 25%;
+    right: 0;
+    background: rgba(33, 59, 92, 1);
+}
+
+.sideBox li a {
+    display: flex;
+    transition: 1.5s;
+}
+
+.sideBox a {
+    width: 150px;
+    height: 53px;
+}
+
+.sideBox li a:hover {
+    background: #ddd;
+}
+
+.sideBox ul li a .side_img {
+    height: 50px;
+    width: 50px
+}
+
+.sideBox ul li a .img01 {
+    background: url(../image/sideimg01-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img01 {
+    background: url(../image/sideimg1-2.png) no-repeat right center;
+}
+
+.sideBox ul li a .img02 {
+    background: url(../image/sideimg02-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img02 {
+    background: url(../image/sideimg2-2.png) no-repeat right center;
+}
+
+.sideBox ul li a .img03 {
+    background: url(../image/sideimg03-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img03 {
+    background: url(../image/sideimg3-2.png) no-repeat right center;
+}
+
+.sideBox ul li a .img04 {
+    background: url(../image/sideimg04-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img04 {
+    background: url(../image/sideimg4-2.png) no-repeat right center;
+}
+
+.sideBox ul li a .img05 {
+    background: url(../image/sideimg05-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img05 {
+    background: url(../image/sideimg5-2.png) no-repeat right center;
+}
+
+.sideBox ul li a .img06 {
+    background: url(../image/sideimg06-1.png) no-repeat right center;
+}
+
+.sideBox ul li a:hover .img06 {
+    background: url(../image/sideimg6-2.png) no-repeat right center;
+}
+
+.sideBox ul a p {
+    width: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 50px;
+    color: #f3f4f8;
+}
+
+.sideBox li a:hover p {
+    color: rgba(33, 59, 92, 1);
 }
